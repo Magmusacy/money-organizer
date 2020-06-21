@@ -12,7 +12,7 @@ class Money
   def update_money(earned_money)
     @money_left_to_earn -= earned_money
     UpdateMoney.new(earned_money)
-    puts "Your earned money/spent (#{earned_money}) has been added to overall value"
+    puts "Your earned/spent money (#{earned_money}) has been added to the overall balance"
     how_many_days_left?(earned_money)
   end
 
